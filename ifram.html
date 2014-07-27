@@ -1,0 +1,30 @@
+<meta charset="utf-8">
+<head>
+<script src="https://raw.githubusercontent.com/seadrus/sandboxnametestcode/master/jquery.js"></script>
+<script>
+function Rand(min, max) {
+	return Math.floor(Math.random() * (max - min)) + min;
+}
+$( document ).ready(function() {
+	if(Rand(1, 100) % 3 == 0){
+		thinga.innerHTML = '<a id="lin" href="https://sites.google.com/site/journalofhalfbakedideas/custom-logical-operators">Custom Logical Operators</a>';
+	} else if(Rand(1, 100) % 3 == 1) {
+		thinga.innerHTML = '<a id="lin" href="https://sites.google.com/site/journalofhalfbakedideas/sdom">SDom</a>';
+	} else if(Rand(1, 100) % 3 == 2) {
+		thinga.innerHTML = '<a id="lin" href="https://sites.google.com/site/journalofhalfbakedideas/system/app/pages/sitemap/hierarchy">Sitemap</a>';
+	} else {
+		thinga.innerHTML = '<a id="lin" href="https://sites.google.com/site/journalofhalfbakedideas/sdom/sdom-versions">SDom Versions</a>';
+	}
+	var cursorstring = 'url(https://59c32eb2-a-62cb3a1a-s-sites.googlegroups.com/site/journalofhalfbakedideas/tox.png)'
+	lin.style = 'background: #888; border-radius: 100px; padding: 10px; color: #222; text-decoration: none; cursor: ' + cursorstring + ', auto;'
+});
+</script>
+</head>
+<body>
+<div id="Holder" style="cursor: url(https://59c32eb2-a-62cb3a1a-s-sites.googlegroups.com/site/journalofhalfbakedideas/tox.png), auto; text-align: center;">
+<div id="ontent_outer" style="background: #aaa; border-radius: 10px; padding: 2%;text-align: center; width: 50%;">
+	<h2 style="border-radius: 5px; background: #ddd; width: auto;">Random page!</h2>
+	<div id="thinga">hello</div>
+</div>
+</div>
+</body>
